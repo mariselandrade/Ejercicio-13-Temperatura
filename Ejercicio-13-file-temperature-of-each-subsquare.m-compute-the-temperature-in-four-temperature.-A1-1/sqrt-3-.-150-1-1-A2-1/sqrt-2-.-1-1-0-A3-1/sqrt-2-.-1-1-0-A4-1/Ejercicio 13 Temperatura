@@ -1,0 +1,17 @@
+%file temperature of each subsquare.m
+%compute the temperature in four temperature.
+A1=[1/sqrt(3)].*[150 1 1];
+A2=[1/sqrt(2)].*[1 1 0];
+A3=[1/sqrt(2)].*[1 1 0];
+A4=[1/sqrt(3)].*[1 1 20];
+A=[A1;A2;A3;A4];
+B=[1;1;1;1];
+Z=A\B;
+disp('The temperature T_1 is:')
+disp(Z(1))
+disp('The temperature T_2 is:')
+disp(Z(2))
+disp('The temperature T_3 is:')
+disp(Z(3))
+disp('The temperature T_4 is:')
+disp(Z(4))
